@@ -19,7 +19,6 @@ This is a simplified Perl unit-testing framework for creating unit tests
 to be run either standalone or under Test::Harness.
 
 %description -l pl
-
 To jest uproszczony szkielet dla testów poszczególnych czê¶ci aplikacji,
 przeznaczony do uruchamiania niezale¿nego lub pod kontrol± Test::Harness.
 
