@@ -4,7 +4,7 @@
 Summary:	%{pdir}::%{pnam} perl module
 Summary(pl):	Modu³ perla %{pdir}::%{pnam}
 Name:		perl-%{pdir}-%{pnam}
-Version:	1.18
+Version:	1.21
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
