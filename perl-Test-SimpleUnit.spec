@@ -5,11 +5,11 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Test
 %define	pnam	SimpleUnit
-Summary:	%{pdir}::%{pnam} perl module
-Summary(pl):	Modu³ perla %{pdir}::%{pnam}
-Name:		perl-%{pdir}-%{pnam}
+Summary:	Test::SimpleUnit - Simplified Perl unit-testing framework
+#Summary(pl):	
+Name:		perl-Test-SimpleUnit
 Version:	1.21
-Release:	2
+Release:	3
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -53,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%{perl_vendorlib}/%{pdir}/%{pnam}.pm
+%{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
