@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Test
 %define	pnam	SimpleUnit
-Summary:	Test::SimpleUnit - Simplified Perl unit-testing framework
-#Summary(pl):	
+Summary:	Test::SimpleUnit - simplified Perl unit-testing framework
+Summary(pl):	Test::SimpleUnit - uproszczony szkielet dla perlowych testów czê¶ci aplikacji
 Name:		perl-Test-SimpleUnit
 Version:	1.21
 Release:	3
@@ -53,5 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/Test/*.pm
 %{_mandir}/man3/*
