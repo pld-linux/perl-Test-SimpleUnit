@@ -3,8 +3,8 @@
 %bcond_without	tests	# do perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Test
-%define	pnam	SimpleUnit
+%define		pdir	Test
+%define		pnam	SimpleUnit
 Summary:	Test::SimpleUnit - simplified Perl unit-testing framework
 Summary(pl):	Test::SimpleUnit - uproszczony szkielet dla perlowych testów czê¶ci aplikacji
 Name:		perl-Test-SimpleUnit
