@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Test
 %define	pnam	SimpleUnit
@@ -6,12 +10,15 @@ Summary(pl):	Modu³ perla %{pdir}::%{pnam}
 Name:		perl-%{pdir}-%{pnam}
 Version:	1.21
 Release:	2
-License:	GPL/Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	14395b9700959aa6c53c9b9b8d7de613
 BuildRequires:	perl-devel >= 5
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Data-Compare
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,12 +39,13 @@ przeznaczony do uruchamiania niezale¿nego lub pod kontrol± Test::Harness.
 	INSTALLDIRS=vendor
 %{__make}
 
-#%%{__make} test
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
