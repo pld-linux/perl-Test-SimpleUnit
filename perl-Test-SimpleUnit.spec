@@ -29,7 +29,7 @@ przeznaczony do uruchamiania niezale¿nego lub pod kontrol± Test::Harness.
 %build
 ## author prefers to fuck with us :-/
 %{__perl} -MExtUtils::MakeMaker -we 'WriteMakefile(NAME=>"Test::SimpleUnit")' \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 #%%{__make} test
