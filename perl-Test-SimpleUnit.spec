@@ -6,7 +6,7 @@
 %define		pdir	Test
 %define		pnam	SimpleUnit
 Summary:	Test::SimpleUnit - simplified Perl unit-testing framework
-Summary(pl):	Test::SimpleUnit - uproszczony szkielet dla perlowych testów czê¶ci aplikacji
+Summary(pl.UTF-8):   Test::SimpleUnit - uproszczony szkielet dla perlowych testÃ³w czÄ™Å›ci aplikacji
 Name:		perl-Test-SimpleUnit
 Version:	1.21
 Release:	3
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is a simplified Perl unit-testing framework for creating unit tests
 to be run either standalone or under Test::Harness.
 
-%description -l pl
-To jest uproszczony szkielet dla testów poszczególnych czê¶ci aplikacji,
-przeznaczony do uruchamiania niezale¿nego lub pod kontrol± Test::Harness.
+%description -l pl.UTF-8
+To jest uproszczony szkielet dla testÃ³w poszczegÃ³lnych czÄ™Å›ci aplikacji,
+przeznaczony do uruchamiania niezaleÅ¼nego lub pod kontrolÄ… Test::Harness.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
