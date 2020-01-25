@@ -4,7 +4,6 @@
 
 %define		pdir	Test
 %define		pnam	SimpleUnit
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::SimpleUnit - simplified Perl unit-testing framework
 Summary(pl.UTF-8):	Test::SimpleUnit - uproszczony szkielet dla perlowych testów części aplikacji
 Name:		perl-Test-SimpleUnit
